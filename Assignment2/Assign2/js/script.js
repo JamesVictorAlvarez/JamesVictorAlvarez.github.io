@@ -45,5 +45,13 @@ $(document).ready(function () {
         $(".match").addClass("hide");
         $(".match").removeClass("show");
     })
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop(),
+        dh = $(document).height(),
+        wh = $(window).height();
+        scrollPercent = (scroll / (dh - wh)) * 100;
+        $(".progress").css("width", scrollPercent + '%');
+    })
 });
 

@@ -44,7 +44,7 @@
     height: auto;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 635px) {
     .header a {
         float: none;
         display: block;
@@ -124,9 +124,21 @@ th {
 
 #list1,
 #list2 {
-    width: 30vw;
+    width: 35vw;
     height: 100px;
     font-family: "Poppins";
+}
+
+@media screen and (max-width: 635px) {
+    table {
+        width: 100px;
+    }
+    .table td {
+        float: left;
+    }
+    .table th {
+        display: none;
+    }
 }
 
 /* ------------- Table -------------*/
@@ -155,7 +167,7 @@ form {
 }
 
 #zip {
-    width: 500px;
+    width: 50vw;
     height: 40px;
     border: none;
     border-radius: 20px;
@@ -226,6 +238,13 @@ form {
 
 .fa {
     color: white;
+}
+
+@media screen and (max-width: 635px) {
+    #logo-footer {
+        height: 120px;
+        width: auto;
+    }
 }
 
 /* ------------- Footer -------------*/
@@ -325,6 +344,7 @@ form {
     font-size: 22px;
     line-height: 40px;
 }
+
 /* ------------- Alert -------------*/
 
 /* ------------- Match -------------*/
@@ -388,3 +408,94 @@ form {
     line-height: 40px;
 }
 /* ------------- Match -------------*/
+
+@media screen and (max-width: 635px) {
+    .alert {
+        min-width: 220px;
+    }
+
+    .alert .fa-exclamation-circle {
+        font-size: 24px;
+    }
+
+    .alert .close-btn {
+        padding: 0;
+    }
+
+    .match {
+        min-width: 220px;
+    }
+
+    .msg {
+        font-size: 14px;
+    }
+
+    .alert .msg {
+        font-size: 12px;
+        padding: 0 28px;
+    }
+
+    .match .fa-check {
+        font-size: 26px;
+    }
+
+    .match .close-btn1 {
+        padding: 0;
+    }
+}
+/* ------------- Match -------------*/
+
+/* ------------- Scrollbar -------------*/
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(to top, #b80606, #e82b05);
+    animation: animate 5s linear infinite;
+    z-index: 4;
+}
+
+@keyframes animate {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg)
+    }
+}
+
+.progress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #b80606, #e82b05);
+    filter: blur(20px);
+    z-index: 4;
+}
+
+.progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #b80606, #e82b05);
+    filter: blur(10px);
+    z-index: 4;
+}
+
+body {
+    overscroll-behavior-y: none;
+}
