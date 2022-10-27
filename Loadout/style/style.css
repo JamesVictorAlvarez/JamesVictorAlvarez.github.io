@@ -178,6 +178,7 @@ p {
     text-align: center;
     color: #fff;
     width: 600px;
+    font-size: 14pt;
 }
 
 /* --------------- Home ---------------*/
@@ -190,7 +191,7 @@ p {
 #h1-guns-ar {
     text-align: center;
     color:#fff;
-    padding: 0 0 10px 0;
+    padding: 20px 0 10px 0;
 }
 #h1-guns {
     text-align: center;
@@ -244,9 +245,24 @@ p {
 /* --------------- Loadout ---------------*/
 
 /* --------------- About ---------------*/
+#h1 {
+    text-align: center;
+    color: #fff;
+    padding: 100px 0 0 0;
+}
 .space {
-    height: 35px;
+    padding: 35px;
 }
 .about-page {
+    color: #fff;
     height: 100%;
+}
+.about-page p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.9;
+    width: 700px;
+    padding: 100px 0 0 200px;
 }
