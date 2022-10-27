@@ -1,73 +1,501 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Warzone Loadout</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/style.css">
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="js/jquery-3.6.1.min.js"></script>
-        <script src="js/script.js"></script>
-    </head>
-    <body>
-        <div class="sidebar">
-            <ul> 
-                <li class="list active">
-                    <b></b>
-                    <b></b>
-                    <a href="Home.html">
-                        <span class="icon"><ion-icon name="home"></ion-icon></span>
-                        <span class="title">Home</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <b></b>
-                    <b></b>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="game-controller"></ion-icon></span>
-                        <span class="title">Loadout</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <b></b>
-                    <b></b>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="information-circle"></ion-icon></ion-icon></span>
-                        <span class="title">About</span>
-                    </a>
-                </li>
-            </ul>
+
+<head>
+    <title>Warzone Loadout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul>
+            <li class="list active">
+                <b></b>
+                <b></b>
+                <a href="#home">
+                    <span class="icon">
+                        <ion-icon name="home"></ion-icon>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <b></b>
+                <b></b>
+                <a href="#Loadout">
+                    <span class="icon">
+                        <ion-icon name="game-controller"></ion-icon>
+                    </span>
+                    <span class="title">Loadout</span>
+                </a>
+            </li>
+            <li class="list">
+                <b></b>
+                <b></b>
+                <a href="#about">
+                    <span class="icon">
+                        <ion-icon name="information-circle"></ion-icon>
+                        </ion-icon>
+                    </span>
+                    <span class="title">About</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="toggle">
+        <ion-icon name="menu" class="open"></ion-icon>
+        <ion-icon name="close" class="close"></ion-icon>
+    </div>
+    <div class="title-home" id="home">
+        <h1>Warzone Loadout</h1>
+    </div>
+    <div class="home">
+        <div class="content-home">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et interdum ex. Maecenas sodales
+            blandit risus ut sollicitudin. Aliquam sit amet auctor risus. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Sed luctus
+            pharetra nisl vitae dignissim. Integer vel aliquam tellus, sit amet vehicula odio. Praesent
+            finibus metus vel ipsum pulvinar, non rhoncus sapien suscipit. Vestibulum hendrerit nunc sed
+            porta iaculis. Quisque posuere lacinia neque at interdum.
+            <br>
+            <br>
+            Fusce pulvinar quis leo a cursus. Sed malesuada risus sed vehicula varius. Suspendisse potenti.
+            Sed sodales maximus molestie. Sed vel massa convallis neque pellentesque convallis a non lacus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Sed tincidunt velit sit amet ligula tincidunt, a scelerisque urna dignissim. Aliquam vehicula
+            odio a turpis vestibulum aliquet sit amet id elit. Duis mattis nunc vitae lectus volutpat
+            laoreet. Aliquam malesuada ligula non erat egestas, vitae luctus felis dictum. Nullam varius
+            dapibus nisi, in dapibus quam rhoncus et.
         </div>
-        <div class="toggle">
-            <ion-icon name="menu" class="open"></ion-icon>
-            <ion-icon name="close" class="close"></ion-icon>
-        </div>
-        <div class="title-home">
-            <h1>Warzone Loadout</h1>
-        </div>
-        <div class="home">
-            <div class="content-home">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et interdum ex. Maecenas sodales 
-                blandit risus ut sollicitudin. Aliquam sit amet auctor risus. Vestibulum ante ipsum primis in 
-                faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique
-                senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Sed luctus 
-                pharetra nisl vitae dignissim. Integer vel aliquam tellus, sit amet vehicula odio. Praesent 
-                finibus metus vel ipsum pulvinar, non rhoncus sapien suscipit. Vestibulum hendrerit nunc sed 
-                porta iaculis. Quisque posuere lacinia neque at interdum.
-                <br>
-                <br>
-                Fusce pulvinar quis leo a cursus. Sed malesuada risus sed vehicula varius. Suspendisse potenti. 
-                Sed sodales maximus molestie. Sed vel massa convallis neque pellentesque convallis a non lacus. 
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                Sed tincidunt velit sit amet ligula tincidunt, a scelerisque urna dignissim. Aliquam vehicula 
-                odio a turpis vestibulum aliquet sit amet id elit. Duis mattis nunc vitae lectus volutpat 
-                laoreet. Aliquam malesuada ligula non erat egestas, vitae luctus felis dictum. Nullam varius 
-                dapibus nisi, in dapibus quam rhoncus et.
+    </div>
+    <div id="Loadout">
+        <h1 id="h1-guns-ar">Assault Rifles</h1>
+        <div class="carousel-container">
+            <div class="ar-carousel">
+                <div class="cell">
+                    <img src="img/stg.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">STG</h1>
+                        <p>
+                            Muzzle: MX Silencer<br>
+                            Barrel: VDD 760MM 05B<br>
+                            Optic: SVT-40 PU Scope 3-6X<br>
+                            Stock: VDD 34S Weighted<br>
+                            Underbarrel: M1941 Hand Stop<br>
+                            Magazine: 7.62 Gorenko 50 Round Mags<br>
+                            AmmoType: Lengthened<br>
+                            RearGrip: Hatched Grip<br>
+                            Perk1: Sleight of Hand<br>
+                            Perk2: Fully Loaded<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/cooper.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">COOOPER</h1>
+                        <p>
+                            Muzzle: MX Silencer<br>
+                            Barrel: 22" Cooper Custom<br>
+                            Optic: G16 2.5X<br>
+                            Stock: Cooper Custom Padded<br>
+                            Underbarrel: Carver Foregrip<br>
+                            Magazine: 9mm 60 Round Drums<br>
+                            AmmoType: Lengthened<br>
+                            RearGrip: Polymer Grip<br>
+                            Perk1: Tight Grip<br>
+                            Perk2: Fully Loaded<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/vargo.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">VARGO</h1>
+                        <p>
+                            Muzzle: GRU Suppressor<br>
+                            Barrel: 18.6" Task Force<br>
+                            Optic: Axial Arms 3x<br>
+                            Underbarrel: Spetsnaz Speedgrip<br>
+                            Magazine: Spetsnaz 60 Rnd Drum<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/grau.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">GRAU</h1>
+                        <p>
+                            Muzzle: Monolithic Suppressor<br>
+                            Barrel: Tempus 26.4" Archangel<br>
+                            Optic: VLK 3.0x Optic<br>
+                            Underbarrel: Commando Foregrip<br>
+                            Magazine: 60 Mag<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/automaton.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">AUTOMATON</h1>
+                        <p>
+                            Muzzle: MX Silencer<br>
+                            Barrel: ZAC 600mm BFA<br>
+                            Optic: SVT-40 PU Scope 3-6X<br>
+                            Stock: Anastasia Padded<br>
+                            Underbarrel: Carver Foregrip<br>
+                            Magazine: Sakura 75 Round Drum<br>
+                            AmmoType: Lengthened<br>
+                            RearGrip: Polymer Grip<br>
+                            Perk1: Tight Grip<br>
+                            Perk2: Fully Loaded<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/xm4.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">XM4</h1>
+                        <p>
+                            Muzzle: Agency Suppressor<br>
+                            Barrel: 13.5" Task Force<br>
+                            Optic: Axial Arms 3x<br>
+                            Underbarrel: Field Agent Grip<br>
+                            Magazine: 45 Rnd<br>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="loadout">
-            a
+
+        <h1 id="h1-guns">Sub Machine Guns</h1>
+        <div class="carousel-container">
+            <div class="ar-carousel">
+                <div class="cell">
+                    <img src="img/marco.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">MARCO 5</h1>
+                        <p>
+                            Muzzle: Recoil Booster<br>
+                            Barrel: Perfetto Lesto 355MM<br>
+                            Optic: Slate Reflector<br>
+                            Stock: Imerito FR<br>
+                            Underbarrel: Mark VI Skeletal<br>
+                            Magazine: 8mm Nambu 64 Round Drums<br>
+                            AmmoType: Subsonic<br>
+                            RearGrip: Taped grip<br>
+                            Perk1: Momentum<br>
+                            Perk2: Quick<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/armaguerra.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">ARMAGUERRA</h1>
+                        <p>
+                            Muzzle: Recoil Booster<br>
+                            Barrel: Botti 570mm Precisione<br>
+                            Optic: Slate Reflector<br>
+                            Stock: Imerito SA Folding<br>
+                            Underbarrel: Mark VI Skeletal<br>
+                            Magazine: 8mm Kurz 64 Round Mags<br>
+                            AmmoType: Hollow Point<br>
+                            RearGrip: Taped grip<br>
+                            Perk1: Hardscope<br>
+                            Perk2: Quick<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/blixen.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">H4 BLIXEN</h1>
+                        <p>
+                            Muzzle: Recoil Booster<br>
+                            Barrel: Bergström 17" F3<br>
+                            Optic: Slate Reflector<br>
+                            Stock: Removed Stock<br>
+                            Underbarrel: SG98 Compact<br>
+                            Magazine: 7.62 Gorenko 54 Round Mags<br>
+                            AmmoType: Subsonic<br>
+                            RearGrip: Grooved Grip<br>
+                            Perk1: Steady<br>
+                            Perk2: Quick<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/mp40.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">MP40</h1>
+                        <p>
+                            Muzzle: Recoil Booster<br>
+                            Barrel: Krausnick 317mm 04B<br>
+                            Optic: Slate Reflector<br>
+                            Stock: Krausnick 33M Folding<br>
+                            Underbarrel: Mark VI Skeletal<br>
+                            Magazine: 7.62 Gorenko 45 Round Mags<br>
+                            AmmoType: Subsonic<br>
+                            RearGrip: Taped grip<br>
+                            Perk1: Momentum<br>
+                            Perk2: Quick<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/mp5.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">MP5 CW</h1>
+                        <p>
+                            Muzzle: Agency Suppressor<br>
+                            Stock: Raider Stock<br>
+                            Underbarrel: Bruiser Grip<br>
+                            Magazine: STANAG 50 Rnd Drum<br>
+                            RearGrip: Serpent Wrap<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/mac10.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">MAC10</h1>
+                        <p>
+                            Muzzle: Agency Suppressor<br>
+                            Barrel: 5.9" Task Force<br>
+                            Stock: Raider Stock<br>
+                            Magazine: Stanag 53 Rnd Drum<br>
+                            RearGrip: Serpent Wrap<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
+
+        <h1 id="h1-guns">Sniper Rifles</h1>
+        <div class="carousel-container">
+            <div class="ar-carousel">
+                <div class="cell">
+                    <img src="img/gorenko.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">GORENKO ANTI-TANK</h1>
+                        <p>
+                            Muzzle: Mercury Silencer<br>
+                            Barrel: 420mm Empress<br>
+                            Optic: SVT-40 PU Scope 3-6X<br>
+                            Stock: Reinforced Stock<br>
+                            Underbarrel: Bipod<br>
+                            Magazine: 13mm AM 10 Round Mags<br>
+                            AmmoType: FMJ Rounds<br>
+                            RearGrip: Stippled Grip<br>
+                            Perk1: Discard<br>
+                            Perk2: On-Hand<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/3line.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">3-LINE RIFLE</h1>
+                        <p>
+                            Muzzle: Mercury Silencer<br>
+                            Barrel: Kovalevskaya 820mm R1MN<br>
+                            Stock: Kovalevskaya S01<br>
+                            Underbarrel: Heavy Foregrip<br>
+                            Magazine: .30-06 20 Round Mags<br>
+                            AmmoType: Lengthened<br>
+                            RearGrip: Fabric Grip<br>
+                            Perk1: Silent Focus<br>
+                            Perk2: On-Hand<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/zrg.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">ZRG 20mm</h1>
+                        <p>
+                            Muzzle: Wrapped Suppressor<br>
+                            Barrel: 43.9" Combat Recon<br>
+                            Laser: SWAT 5mw Laser Sight<br>
+                            Magazine: 5 Mag<br>
+                            RearGrip: Serpent Wrap<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/kar98kMW.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">KAR98K MW</h1>
+                        <p>
+                            Muzzle: Monolithic Suppressor<br>
+                            Barrel: Singuard Custom 27.6"<br>
+                            Laser: Tac Laser<br>
+                            Optic: Sniper Scope<br>
+                            Stock: Sport Comb FTAC<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/kar98kV.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">KAR98K V</h1>
+                        <p>
+                            Muzzle: Scout Silencer<br>
+                            Barrel: VDD RE02K<br>
+                            Stock: Short Stock<br>
+                            Underbarrel: SMLE Pistol Grip<br>
+                            Magazine: 8mm Klauser 5 Round Fast Mag<br>
+                            AmmoType: Lengthened<br>
+                            RearGrip: Leather Grip<br>
+                            Perk1: Fleet<br>
+                            Perk2: Fully Loaded<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/HDR.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">HDR</h1>
+                        <p>
+                            Muzzle: Monolithic Suppressor<br>
+                            Barrel: 26.9" HDR Pro<br>
+                            Laser: Tac Laser<br>
+                            Stock: FTAC Stalker-Scout<br>
+                            Perk1: Sleight of Hand<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/swiss.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">SWISS</h1>
+                        <p>
+                            Muzzle: GRU Suppressor<br>
+                            Barrel: 24.9" Combat Recon<br>
+                            Laser: SWAT 5mw Laser<br>
+                            Underbarrel: Bruiser Grip<br>
+                            RearGrip: Airborne Elastic Wrap<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 id="h1-guns">Light Machine Gun</h1>
+        <div class="carousel-container">
+            <div class="ar-carousel">
+                <div class="cell">
+                    <img src="img/ugm.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">UGM-8</h1>
+                        <p>
+                            Muzzle: MX Silencer<br>
+                            Barrel: Bernard XL214 736MM<br>
+                            Optic: 1229/Slate 3.25x Custom<br>
+                            Stock: Mercier WT Ancre<br>
+                            Underbarrel: m1930 Strife Angled<br>
+                            Magazine: 6.5mm Sakura 100 Round Box<br>
+                            AmmoType: Lengthened<br>
+                            RearGrip: Polymer Grip<br>
+                            Perk1: Tight Grip<br>
+                            Perk2: On-Hand<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/whitley.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">WHITLEY</h1>
+                        <p>
+                            Muzzle: MX Silencer<br>
+                            Barrel: 28" Gracey Mk. 9<br>
+                            Optic: G16 2.5X<br>
+                            Stock: CGC R4<br>
+                            Underbarrel: m1930 Strife Angled<br>
+                            Magazine: .303 British 45 Round<br>
+                            AmmoType: Lengthened<br>
+                            RearGrip: Hatched Grip<br>
+                            Perk1: Hardscope<br>
+                            Perk2: On-Hand<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/rpd.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">RPD</h1>
+                        <p>
+                            Muzzle: GRU Suppressor<br>
+                            Barrel: 20.3" Task Force<br>
+                            Optic: Axial Arms 3x<br>
+                            Underbarrel: Spetsnaz Grip<br>
+                            Magazine: 120 Rnd<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/bruen.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">BRUEN MK9</h1>
+                        <p>
+                            Muzzle: Monolithic Suppressor<br>
+                            Barrel: XRK Summit 26.8"<br>
+                            Laser: Tac Laser<br>
+                            Optic: VLK 3.0x Optic<br>
+                            Magazine: 60 Round Mags<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/type-11.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">TYPE 11</h1>
+                        <p>
+                            Muzzle: MX Silencer<br>
+                            Barrel: Sakura 487MM Shrouded<br>
+                            Optic: SVT-40 PU Scope 3-6x<br>
+                            Stock: Warubachi Type 33<br>
+                            Underbarrel: M1941 Hand Stop<br>
+                            Magazine: 5.6mm 45 Round Mags<br>
+                            AmmoType: Lengthened<br>
+                            RearGrip: Hatched Grip<br>
+                            Perk1: Sleight of Hand<br>
+                            Perk2: Fully Loaded<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="img/mg-82.jpg">
+                    <div class="image-overlay">
+                        <h1 class="img-title">MG 82</h1>
+                        <p>
+                            Muzzle: Agency Suppressor<br>
+                            Barrel: 16.4" Task Force<br>
+                            Optic: Axial Arms 3x<br>
+                            Underbarrel: Field Agent Grip<br>
+                            Magazine: 125 Rnd<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="about-page" id="about">
+        asdf
+    </div>
+</body>
+
 </html>

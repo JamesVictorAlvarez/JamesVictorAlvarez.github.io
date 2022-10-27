@@ -18,4 +18,14 @@ $(document).ready(function() {
             list[i].className = "list active";
         }
     }
+
+    //Image sliders
+    $(".ar-carousel").flickity({
+        cellAlign: 'left',
+        wrapAround:true,
+        freeScroll:true,
+        groupCells:true,
+        Parralax:true,
+        draggable:false
+    })
 });

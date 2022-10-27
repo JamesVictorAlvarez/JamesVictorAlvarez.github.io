@@ -29,6 +29,7 @@ html, body {
     background: #333F44;
     transition: 0.5s;
     overflow-x: hidden;
+    z-index: 2;
 }
 .sidebar.active {
     width: 300px;
@@ -158,17 +159,19 @@ html, body {
 /* --------------- SideBar ---------------*/
 
 /* --------------- Home ---------------*/
+p {
+    line-height: 1.5;
+}
 .title-home {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0 0 0;
+    padding: 30px 0 150px 0;
     color: #fff;
 }
 .home {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100%;
 }
 .content-home {
@@ -176,8 +179,74 @@ html, body {
     color: #fff;
     width: 600px;
 }
+
 /* --------------- Home ---------------*/
 
-.loadout {
+/* --------------- Loadout ---------------*/
+.carousel-container {
+    display: flex;
+    justify-content: center;
+}
+#h1-guns-ar {
+    text-align: center;
+    color:#fff;
+    padding: 0 0 10px 0;
+}
+#h1-guns {
+    text-align: center;
+    color:#fff;
+    padding: 120px 0 10px 0;
+}
+.ar-carousel {
+    z-index: 0;
+    height: 360px;
+    width: 84%;
+}
+.cell {
+    width: 33%;
+    height: 360px;
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+.cell img {
+    width: 100%;
+    height: 360px;
+    object-fit:cover;
+}
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #94F3E4;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.image-overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.image-overlay:hover > * {
+    transform: translateY(0);
+}
+/* --------------- Loadout ---------------*/
+
+/* --------------- About ---------------*/
+.space {
+    height: 35px;
+}
+.about-page {
     height: 100%;
 }
