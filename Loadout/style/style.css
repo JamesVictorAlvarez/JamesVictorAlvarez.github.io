@@ -243,6 +243,26 @@ p {
 /* --------------- Home ---------------*/
 
 /* --------------- Loadout ---------------*/
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #94F3E4;
+    text-transform: uppercase;
+    padding: 180px 0 50px 0;
+}
+
+.divider1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #94F3E4;
+    text-transform: uppercase;
+    padding: 50px 0 50px 0;
+}
+
 .carousel-container {
     display: flex;
     justify-content: center;
