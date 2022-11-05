@@ -17,6 +17,50 @@ body {
     height: 100%;
 }
 
+/* ------------------------------------ Bubbles ----------------------------------------*/
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+    z-index: -1;
+}
+
+.bubbles span {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #3C2B32;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #3C2B3244, 0 0 50px #3C2B32, 0 0 100px #3C2B32;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(130s / var(--i));
+    filter: blur(10px);
+}
+
+.bubbles span:nth-child(even) {
+    background: #654144;
+    box-shadow: 0 0 0 10px #65414444, 0 0 50px #654144, 0 0 100px #654144;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-10vh) scale(0.7);
+    }
+
+    100% {
+        transform: translateY(100vh) scale(0.1);
+    }
+}
+
+/* ------------------------------------ Bubbles ----------------------------------------*/
+
 /* ------------------------------------ SideBar ----------------------------------------*/
 .sidebar {
     position: fixed;
@@ -30,7 +74,7 @@ body {
     background: #2C2B3C;
     transition: 0.5s;
     overflow-x: hidden;
-    z-index: 2;
+    z-index: 4;
 }
 
 .sidebar.active {
@@ -178,8 +222,6 @@ body {
         left: 0px;
         width: 100%;
     }
-
-    .toggle {}
 }
 
 /* ------------------------------------ SideBar ----------------------------------------*/
@@ -214,28 +256,32 @@ form {
 .form-control input {
     border: 1px solid #777;
     border-radius: 14px;
-    font-family: inherit;
     padding: 10px;
     display: block;
     width: 95%;
 }
 
-/* Styling Button */
 button {
-    background-color: #B76D68;
-    border: none;
     border-radius: 200px;
-    font-family: inherit;
+    background: #B76D68;
+    text-transform: uppercase;
     font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    color: #fff;
     width: 100px;
     height: 30px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
 }
+
+button:hover {
+    background: #D2A4A0;
+    transform: translateY(-15px);
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 24px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* ----------------------------------- Home & Form --------------------------------------*/
 
 
@@ -250,7 +296,7 @@ button {
     text-align: center;
 }
 
-.container,
+.containerMenu,
 .containerEntree {
     display: flex;
     justify-content: center;
@@ -315,7 +361,7 @@ button {
         padding: 10px 40px 25px 40px;
     }
 
-    .container {
+    .containerMenu {
         display: block;
     }
 }
@@ -361,16 +407,8 @@ button {
     transition: 0.5s;
 }
 
-.icons ion-icon {
-    padding: 10px;
-    background: #121420;
-    border-radius: 50%;
-    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
-}
-
 .icons ion-icon:hover {
-    color:#B76D68;
+    color: #B76D68;
     transform: translateY(-15px);
     box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 24px 10px rgba(0, 0, 0, 0.1);
 }
