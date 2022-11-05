@@ -1,0 +1,40 @@
+{
+  "MenuItem": {
+    "Question": "Which menu item is your favorite?",
+    "Choice": [
+      {
+        "No": "1",
+        "Name": "Salad"
+      },
+      {
+        "No": "2",
+        "Name": "Burger"
+      },
+      {
+        "No": "3",
+        "Name": "Soup"
+      }
+    ]
+  },
+  "EntreeItem": {
+    "Question": "Which entrees items do you usually order (select all that apply)?",
+    "Choice": [
+      {
+        "No": "1",
+        "Name": "Chicken Wings"
+      },
+      {
+        "No": "2",
+        "Name": "Onion Rings"
+      },
+      {
+        "No": "3",
+        "Name": "Quesadilla"
+      },
+      {
+        "No": "4",
+        "Name": "Nachos"
+      }
+    ]
+  }
+}
