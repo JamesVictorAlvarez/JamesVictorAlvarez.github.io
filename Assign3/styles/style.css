@@ -179,16 +179,63 @@ body {
         width: 100%;
     }
 
-    .toggle {
-        
-    }
+    .toggle {}
 }
 
 /* ------------------------------------ SideBar ----------------------------------------*/
 
 
 /* ----------------------------------- Home --------------------------------------*/
-#menuH1, #entreeH1 {
+form {
+    background-color: #2C2B3C;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control input {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+/* Styling Button */
+button {
+    background-color: #B76D68;
+    border: none;
+    border-radius: 200px;
+    font-family: inherit;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+/* ----------------------------------- Home --------------------------------------*/
+
+
+/* ----------------------------------- Menu & Entree --------------------------------------*/
+#menuH1,
+#entreeH1 {
     padding: 150px 0 20px 0;
     display: flex;
     justify-content: center;
@@ -197,13 +244,15 @@ body {
     text-align: center;
 }
 
-.container, .containerEntree {
+.container,
+.containerEntree {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.radio, .radioEntree {
+.radio,
+.radioEntree {
     display: inline-flex;
     cursor: pointer;
     color: #fff;
@@ -236,7 +285,7 @@ body {
     transition: transform 0.15s;
 }
 
-.radio-input:checked + .radio-button::after {
+.radio-input:checked+.radio-button::after {
     transform: scale(1);
 }
 
@@ -283,3 +332,5 @@ body {
         display: block;
     }
 }
+
+/* ----------------------------------- Menu & Entree --------------------------------------*/
