@@ -4,7 +4,7 @@ $.ajax({
     success: function(response){
         console.log(response)
         document.getElementById("nasa-title").textContent = response.title
-        document.getElementById("date").textContent = response.date
+        // document.getElementById("date").textContent = response.date
         document.getElementById("nasa-img").src = response.url
         document.getElementById("nasa-description").textContent = response.explanation
     }

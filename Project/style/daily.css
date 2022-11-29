@@ -53,6 +53,18 @@ body {
 }
 
 #nasa-description {
-    text-align: center;
-    padding: 50px 400px 0 400px;
+    text-align: right;
+    padding: 50px 40px 0 40px;
+}
+
+.abc {
+    background-color: rgb(48, 44, 44);
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.abcd {
+    background-color: rgb(53, 47, 58);
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
