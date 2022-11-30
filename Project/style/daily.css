@@ -74,6 +74,7 @@ body {
     border-radius: 10px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
     color: black;
+    font-size: 8.5pt;
 }
 
 .bc {
@@ -81,8 +82,8 @@ body {
     max-height: 100%;
 }
 
-canvas {
-    position: absolute;
+#myCanvas {
+    position: fixed;
     z-index: -1;
 }
 
