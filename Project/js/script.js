@@ -1,3 +1,4 @@
+//Home
 $.ajax({
     url: "https://api.nasa.gov/planetary/apod?api_key=Txu7JGdMoSgOHZuZqXfX3VDlpUUoaA4I8i49a7nB",
     method: "GET",
