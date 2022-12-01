@@ -2,14 +2,22 @@
 $.ajax({
     url: "https://api.nasa.gov/planetary/apod?api_key=Txu7JGdMoSgOHZuZqXfX3VDlpUUoaA4I8i49a7nB",
     method: "GET",
-    success: function(response) {
-        console.log(response)
+    success: function (response) {
         document.getElementById("nasa-title").textContent = response.title
         document.getElementById("nasa-img").src = response.url
         document.getElementById("nasa-description").textContent = response.explanation
     }
 });
 /*-------------------------------------------------------------------------||AJAX||-------------------------------------------------------------------------*/
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+$.getJSON('json/videos.json', function (data) {
+    // console.log(data.NasaVideos[1].src)
+    document.getElementById("iframe").src = data.NasaVideos[getRandomInt(14)].src;
+}); 
 
 /*-------------------------------------------------------------------------||CANVAS BACKGROUND||-------------------------------------------------------------------------*/
 const STAR_COLOR = '#fff';
