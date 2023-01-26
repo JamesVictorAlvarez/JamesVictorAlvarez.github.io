@@ -12,15 +12,3 @@ Currenlty a student studying computer science
 
 - [@James](https://github.com/JamesVictorAlvarez)
 
-
-## FAQ
-
-#### Question 1
-
-Answer 1
-
-#### Question 2
-
-Answer 2
-
-
